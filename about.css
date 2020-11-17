@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: var(--brown);
+  font-family: 'Merriweather', serif;
+  font-size: .8rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px;
+  grid-template-areas:
+  "coffee sugar milk";
+  align-items: center;
+  justify-items: center;
+
+  background: black;
+  color: white;
+
+}
+.coffee {
+  grid-area: coffee;
+  padding: 5% 33%;
+  box-shadow: 0 0 0 0;
+  transition: 1s;
+  transform: rotateZ(0deg);
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+
+.coffee:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+  transition: 1s;
+  background: #e05f14;
+  color: white;
+  z-index: 2;
+  border-left: 5px solid #794228;
+  border-right: 5px solid #794228;
+  border-bottom: 5px solid #372214;
+  border-top: 5px solid #372214;
+
+}
+.sugar {
+  grid-area: sugar;
+  padding: 7% 33%;
+  box-shadow: 0 0 0 0;
+  transition: 1s;
+}
+.sugar:hover {
+  box-shadow: 1px 49px 5px -37px rgba(0,0,0,0.75);
+  transition: 1s;
+  background: #d38a56;
+  color: white;
+  z-index: 2;
+  border-left: 5px solid #794228;
+  border-right: 5px solid #794228;
+  border-bottom: 5px solid #372214;
+  border-top: 5px solid #372214;
+}
+.milk {
+  grid-area: milk;
+  padding: 5% 33%;
+  box-shadow: 0 0 0 0;
+  transition: 1s;
+  transform: rotateZ(0deg);
+}
+.milk:hover {
+  box-shadow: -10px 12px 5px 0px rgba(0,0,0,0.75);
+
+  transition: 1s;
+  background: #efbd7c;
+  color: white;
+  z-index: 2;
+  border-left: 5px solid #794228;
+  border-right: 5px solid #794228;
+  border-bottom: 5px solid #372214;
+  border-top: 5px solid #372214;
+}
+
+
+canvas {
+  border-bottom: 20px solid black;
+  height: 500px;
+  width: 100%;
+  background-image: url("https://www.liquidesign.co.uk/wp-content/uploads/2018/06/850_6936.jpg");
+  background-attachment: fixed;
+  box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #cc7c43, 0px 0px 0px 24px #000000 , 0px 0px 0px 31px #cc7c43, 0px 0px 0px 39px #000, -8px 3px 20px 6px #cc7c43;
+}
+
+/*  MIRROR COLLUMNS */
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 400px 400px;
+  grid-template-areas:
+  "d1"
+  "d2"
+  "d3";
+  justify-items: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-color: #000000;
+}
+.d1 {
+  grid-area: d1;
+  background: ;
+  transition: 1s;
+  color: white;
+  padding:4rem 20%;
+  margin: 0rem 4rem;
+  box-shadow:
+  0 2.8px 2.2px rgba(206, 87,22, 0.034),
+  0 6.7px 5.3px rgba(206, 87,22, 0.048),
+  0 12.5px 10px rgba(206, 87,22, 0.06),
+  0 22.3px 17.9px rgba(206, 87,22, 0.072),
+  0 41.8px 33.4px rgba(206, 87,22, 0.086),
+  0 100px 80px rgba(206, 87,22, 0.12);
+}
+.d1:hover {
+  box-shadow:
+  0 2.8px 2.2px rgba(238,221,130, 0.034),
+  0 6.7px 5.3px rgba(238,221,130, 0.048),
+  0 12.5px 10px rgba(238,221,130, 0.06),
+  0 22.3px 17.9px rgba(238,221,130, 0.072),
+  0 41.8px 33.4px rgba(238,221,130, 0.086),
+  0 100px 80px rgba(238,221,130, 0.12);
+}
+.d2 {
+  grid-area: d2;
+  background: ;
+  transition: 1s;
+  color: white;
+  padding:4rem 20%;
+  margin: 0rem 4rem;
+  font-size: 1rem;
+  box-shadow:
+  0 2.8px 2.2px rgba(206, 87,22, 0.034),
+  0 6.7px 5.3px rgba(206, 87,22, 0.048),
+  0 12.5px 10px rgba(206, 87,22, 0.06),
+  0 22.3px 17.9px rgba(206, 87,22, 0.072),
+  0 41.8px 33.4px rgba(206, 87,22, 0.086),
+  0 100px 80px rgba(206, 87,22, 0.12);
+}
+.d2:hover {
+  box-shadow:
+  0 2.8px 2.2px rgba(238,221,130, 0.034),
+  0 6.7px 5.3px rgba(238,221,130, 0.048),
+  0 12.5px 10px rgba(238,221,130, 0.06),
+  0 22.3px 17.9px rgba(238,221,130, 0.072),
+  0 41.8px 33.4px rgba(238,221,130, 0.086),
+  0 100px 80px rgba(238,221,130, 0.12);
+}
+.d3 {
+  grid-area: d3;
+  background: ;
+  transition: 1s;
+  color: white;
+  padding:4rem 20%;
+  margin: 0rem 4rem;
+  font-size: 1rem;
+  box-shadow:
+  0 2.8px 2.2px rgba(206, 87,22, 0.034),
+  0 6.7px 5.3px rgba(206, 87,22, 0.048),
+  0 12.5px 10px rgba(206, 87,22, 0.06),
+  0 22.3px 17.9px rgba(206, 87,22, 0.072),
+  0 41.8px 33.4px rgba(206, 87,22, 0.086),
+  0 100px 80px rgba(206, 87,22, 0.12);
+}
+.d3:hover {
+  box-shadow:
+  0 2.8px 2.2px rgba(238,221,130, 0.034),
+  0 6.7px 5.3px rgba(238,221,130, 0.048),
+  0 12.5px 10px rgba(238,221,130, 0.06),
+  0 22.3px 17.9px rgba(238,221,130, 0.072),
+  0 41.8px 33.4px rgba(238,221,130, 0.086),
+  0 100px 80px rgba(238,221,130, 0.12);
+}
+
+
+
+
+
+/*  MIRROR COLLUMNS */
+
+
+/* RESPONSIVENESS */
+@media (max-width: 850px) {
+  .d1, .d2, .d3, .navigation {
+    font-size: .5rem;
+  }
+  .about{
+    grid-template-rows: 200px 200px 200px;
+  }
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: 280px 120px;
+  grid-template-areas:
+  "address contact value"
+  "copyright copyright copyright";
+  background: black;
+  color: white;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(238,221,130, 1);
+}
+
+.address {
+  grid-area: address;
+}
+.address li {
+  list-style:  square;
+  padding: 10px;
+}
+.contact {
+  grid-area: contact;
+}
+.contact li {
+  list-style:  square;
+  padding: 10px;
+}
+.value {
+  grid-area: value;
+  text-align: center;
+
+}
+.value p {
+  padding: 10px;
+  font-size: 23px;
+}
+.copyright {
+  grid-area: copyright;
+}
+/* FOOTER QUERIES  */
+@media(max-width: 800px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 180px 150px 20px;
+    grid-template-areas:
+    "address"
+    "contact"
+    "value"
+    "copyright";
+
+    justify-content: center;
+    text-align: center;
+  }
+  .address {
+    font-size: 0.7rem;
+  }
+  .contact {
+    font-size: 0.7rem;
+  }
+  .value {
+    font-size: 0.8rem;
+  }
+.value h1 {
+  font-size: 0.8rem;
+}
+.value p {
+  font-size: 0.7rem;
+}
+  .copyright {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
+}
